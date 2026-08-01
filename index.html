@@ -461,25 +461,25 @@ textarea { resize: vertical; min-height: 56px; }
 // ── Данные блоков ──────────────────────────────────────────
 var BLOCKS = [
   { key:'genki',    label:'Genki English',           period:'Сентябрь–Октябрь', att:12, isGenki:true,  hasTest:false,
-    v:'песни и движение',      g:'разговорные фразы' },
-  { key:'u1',       label:'Unit 1 — Ready for school!', period:'Октябрь–Ноябрь', att:9,  isGenki:false, hasTest:true,
-    v:'предметы класса',       g:'Where\'s my…? / in / on / under' },
-  { key:'u2',       label:'Unit 2 — Happy birthday!',   period:'Ноябрь',         att:6,  isGenki:false, hasTest:true,
-    v:'игрушки',               g:'Is it a…? / Yes, it is. / No, it isn\'t.' },
-  { key:'u3',       label:'Unit 3 — At the circus',     period:'Декабрь',        att:6,  isGenki:false, hasTest:true,
-    v:'части тела, внешность', g:'I\'ve / He\'s / She\'s got…' },
-  { key:'u4',       label:'Unit 4 — Fantastic food!',   period:'Январь',         att:6,  isGenki:false, hasTest:true,
-    v:'еда и фрукты',          g:'I like / don\'t like / love… Do you like…?' },
-  { key:'u5',       label:'Unit 5 — Fun on the farm',   period:'Январь–Февраль', att:6,  isGenki:false, hasTest:true,
-    v:'животные фермы',        g:'can / can\'t' },
-  { key:'u6',       label:'Unit 6 — A day in the park', period:'Февраль–Март',   att:6,  isGenki:false, hasTest:true,
-    v:'парк, природа',         g:'Where\'s / Where are…? (предлоги места)' },
-  { key:'u7',       label:'Unit 7 — Let\'s explore my town!', period:'Март',     att:6,  isGenki:false, hasTest:true,
-    v:'места в городе, транспорт', g:'There is / There are… How many?' },
-  { key:'u8',       label:'Unit 8 — Camping fun!',      period:'Апрель',         att:6,  isGenki:false, hasTest:true,
-    v:'одежда, активности',    g:'Present Continuous — What are you wearing? / He\'s…' },
-  { key:'u9',       label:'Unit 9 — Day and night',     period:'Апрель–Май',     att:8,  isGenki:false, hasTest:true,
-    v:'ежедневные действия',   g:'I (wash my face) every day. Времена суток.' }
+    v:'команды, приветствия, эмоции, числа 1–12, цвета, животные, овощи', g:'What\'s your name? — My name is… / I\'m happy. / I can fly! / I like…' },
+  { key:'u1',       label:'Unit 1 · Ready for school! — Школьные принадлежности', period:'Октябрь–Ноябрь', att:9,  isGenki:false, hasTest:true,
+    v:'предметы класса (pencil, book, bag, ruler, rubber…)',       g:'Where\'s my…? / in / on / under' },
+  { key:'u2',       label:'Unit 2 · Happy birthday! — Игрушки',   period:'Ноябрь',         att:6,  isGenki:false, hasTest:true,
+    v:'игрушки (bike, ball, kite, doll, train, robot…)',               g:'Is it a…? / Yes, it is. / No, it isn\'t.' },
+  { key:'u3',       label:'Unit 3 · At the circus — Части тела и внешность',     period:'Декабрь',        att:6,  isGenki:false, hasTest:true,
+    v:'части тела, внешность (head, eyes, ears, arms, legs…)', g:'I\'ve / He\'s / She\'s got…' },
+  { key:'u4',       label:'Unit 4 · Fantastic food! — Еда',   period:'Январь',         att:6,  isGenki:false, hasTest:true,
+    v:'еда и фрукты (chicken, pizza, rice, salad, fish…)',          g:'I like / don\'t like / love… Do you like…?' },
+  { key:'u5',       label:'Unit 5 · Fun on the farm — Животные',   period:'Январь–Февраль', att:6,  isGenki:false, hasTest:true,
+    v:'животные (cat, cow, sheep, duck, frog, bird, mouse…)',        g:'Can you see a…? — Yes, I can! / can / can\'t' },
+  { key:'u6',       label:'Unit 6 · A day in the park — Прогулка в парке', period:'Февраль–Март',   att:6,  isGenki:false, hasTest:true,
+    v:'парк, природа (swing, slide, seesaw, tree, flower…)',         g:'Where\'s / Where are…? (предлоги места)' },
+  { key:'u7',       label:'Unit 7 · Let\'s explore my town! — Город', period:'Март',     att:6,  isGenki:false, hasTest:true,
+    v:'места в городе (cinema, zoo, café, supermarket…)', g:'There is / There are… How many?' },
+  { key:'u8',       label:'Unit 8 · Camping fun! — Одежда и активности',      period:'Апрель',         att:6,  isGenki:false, hasTest:true,
+    v:'одежда, активности (T-shirt, shorts, skirt, trainers…)',    g:'Present Continuous — What are you wearing? / He\'s…' },
+  { key:'u9',       label:'Unit 9 · Day and night — Мой день',     period:'Апрель–Май',     att:8,  isGenki:false, hasTest:true,
+    v:'ежедневные действия (get up, brush my teeth, go to bed…)',   g:'I (wash my face) every day. Времена суток.' }
 ];
 // att:8 = 6 уроков Unit 9 + Final Test (ур.70) + Speaking Exam (ур.71). Резерв (ур.72) не блок.
 
@@ -606,15 +606,15 @@ var REPORTS = {
     ],
     reading: [
       // 1
-      'Фонетика (Jolly Phonics Book 1): познакомились со звуками английского. Пока буквы и звуки путаются — нужно время. Продолжаем в следующем блоке.',
+      'Фонетика (Phonics Hero, Часть 1): познакомились со звуками английского. Пока буквы и звуки путаются — нужно время. Продолжаем в следующем блоке.',
       // 2
-      'Фонетика (Jolly Phonics Book 1): изучили первые группы звуков — s, a, t, i, p, n, c, k, e, h, r, m, d. '+'{name}'+' уже пробует читать простые слова: sat, pin, hen. Это хорошее начало — звуки закрепятся с практикой.',
+      'Фонетика (Phonics Hero, Часть 1): изучили первые группы звуков — s, a, t, i, p, n, c, k, e, h, r, m, d. '+'{name}'+' уже пробует читать простые слова: sat, pin, hen. Это хорошее начало — звуки закрепятся с практикой.',
       // 3
-      'Фонетика (Jolly Phonics Book 1): прошли 20 из 26 звуков. '+'{name}'+' читает CVC-слова (три буквы): sat, pin, hen, dog, fun. Иногда путается — это нормально на этом этапе. Чтение формируется постепенно.',
+      'Фонетика (Phonics Hero, Часть 1): прошли 20 из 26 звуков. '+'{name}'+' читает CVC-слова (три буквы): sat, pin, hen, dog, fun. Иногда путается — это нормально на этом этапе. Чтение формируется постепенно.',
       // 4
-      'Фонетика (Jolly Phonics Book 1): изучили все 26 звуков английского языка. '+'{name}'+' читает первые слова уверенно: sat, pin, hen, dog, fun, big. Это фундамент — в следующем блоке начнём читать предложения.',
+      'Фонетика (Phonics Hero, Часть 1): изучили все 26 звуков английского языка. '+'{name}'+' читает первые слова уверенно: sat, pin, hen, dog, fun, big. Это фундамент — в следующем блоке начнём читать предложения.',
       // 5
-      'Фонетика (Jolly Phonics Book 1): все 26 звуков пройдены и усвоены отлично. '+'{name}'+' читает слова самостоятельно: sat, pin, hen, dog, fun, big, red, cup. Уже делает первые попытки читать предложения. Такой темп — это очень сильный результат для первого блока.'
+      'Фонетика (Phonics Hero, Часть 1): все 26 звуков пройдены и усвоены отлично. '+'{name}'+' читает слова самостоятельно: sat, pin, hen, dog, fun, big, red, cup. Уже делает первые попытки читать предложения. Такой темп — это очень сильный результат для первого блока.'
     ]
   },
   // ── UNIT 1 ──
@@ -627,11 +627,11 @@ var REPORTS = {
       'Отличный первый юнит! '+'{name}'+' свободно ориентируется в классе на английском: называет все предметы, уверенно говорит где что лежит — «It\'s in the bag», «It\'s under the chair», «Put it on the shelf». Диалог «May I borrow your…? — Of course!» использует в реальных ситуациях на уроке. Это живой язык, не заученные фразы.'
     ],
     reading: [
-      'Фонетика (JP Book 2): начали работу со звуками ch, sh, th. Пока в процессе освоения.',
-      'Фонетика (JP Book 2): звуки ch (chip, much), sh (ship, fish), th (this, three) — в процессе. '+'{name}'+' читает слова с опорой.',
-      'Фонетика (JP Book 2): ch, sh, th, ng — знакомы. '+'{name}'+' читает слова с этими звуками с небольшой поддержкой: chip, shop, ring.',
-      'Фонетика (JP Book 2): ch, sh, th, ng — усвоены. '+'{name}'+' читает уверенно: chip, chop, ship, fish, this, ring, long. Переходим к коротким гласным.',
-      'Фонетика (JP Book 2): ch, sh, th (мягкий и твёрдый), ng — освоены отлично. '+'{name}'+' читает бегло: chip, chop, much, ship, dish, this, that, ring, strong. Короткие гласные — без ошибок.'
+      'Фонетика (Phonics Hero, Часть 2): начали первые диграфы — ai, oa, ie, ee, or. Пока в процессе освоения.',
+      'Фонетика (Phonics Hero): диграфы ai (rain), oa (boat), ie (pie) — в процессе. '+'{name}'+' читает слова с опорой.',
+      'Фонетика (Phonics Hero): диграфы ai·oa·ie, ee·or, ng·oo — знакомы. '+'{name}'+' читает с небольшой поддержкой: rain, boat, tree, moon.',
+      'Фонетика (Phonics Hero): диграфы ai·oa·ie, ee·or, ng·oo, ch·sh·th — усвоены. '+'{name}'+' читает уверенно: rain, boat, tree, ring, chip, ship. Переходим к ou·oi.',
+      'Фонетика (Phonics Hero): все диграфы блока (ai·oa·ie, ee·or, ng·oo, ch·sh·th, ou·oi) — освоены отлично. '+'{name}'+' читает бегло: rain, boat, tree, moon, chip, ship, out, coin.'
     ]
   },
   // ── UNIT 2 ──
@@ -644,11 +644,11 @@ var REPORTS = {
       '{name}'+' говорит об игрушках свободно: описывает, загадывает, отгадывает — «It\'s big and fast. Is it a bike? — No! It\'s a skateboard!» Прилагательные в речи естественны: «I\'ve got a new blue robot». Отличный результат.'
     ],
     reading: [
-      'Фонетика: двойные согласные (ll, ff, ss, zz) и Magic e — в начале пути.',
-      'Фонетика: двойные согласные (bell, off, miss) — с опорой. Magic e (a-e: cake, name) — знакомимся.',
-      'Фонетика: двойные согласные усвоены. Magic e (a-e: cake, name; i-e: kite, bike) — '+'{name}'+' читает с поддержкой.',
-      'Фонетика: Magic e (a-e, e-e, i-e) — читает уверенно: cake, name, kite, bike, smile. Длинные гласные начинают получаться.',
-      'Фонетика: Magic e для a-e, e-e, i-e — освоено отлично. '+'{name}'+' читает: cake, game, Pete, kite, smile — без подсказок. Понимает правило.'
+      'Фонетика (Phonics Hero): диграфы ou·oi, ue·er·ar — в начале пути.',
+      'Фонетика: ou (out) и oi (coin) — с опорой. ue·er·ar — знакомимся.',
+      'Фонетика: диграфы ou·oi, ue·er·ar усвоены. Magic E (краткий/долгий гласный) — '+'{name}'+' читает с поддержкой.',
+      'Фонетика: диграфы и Magic E a-e — читает уверенно: out, coin, blue, star, cake, name. Правило «молчаливой e» начинает получаться.',
+      'Фонетика: все диграфы Части 2 и Magic E a-e — освоено отлично. '+'{name}'+' читает: out, coin, blue, star, cake, game — без подсказок. Понимает правило.'
     ]
   },
   // ── UNIT 3 ──
@@ -661,11 +661,11 @@ var REPORTS = {
       '{name}'+' описывает внешность легко и точно: «He\'s got three heads, four mouths and two noses!» (это из игры «Monster»). В реальном описании: «She\'s got straight brown hair and small blue eyes». Have got — свободно, без опоры.'
     ],
     reading: [
-      'Фонетика: Magic e (o-e, u-e) и диграф ck — начинаем.',
-      'Фонетика: Magic e (o-e: bone, home; u-e: cube, tune) — знакомится. ck (kick, clock) — с опорой.',
-      'Фонетика: Magic e (o-e, u-e) — читает с поддержкой. Правило ck vs k — понимает, иногда путается.',
-      'Фонетика: Magic e (o-e: bone, rope; u-e: cube, tune) — уверенно. ck (kick, back, clock) — без ошибок.',
-      'Фонетика: все варианты Magic e (a-e, e-e, i-e, o-e, u-e) — освоены отлично. '+'{name}'+' читает длинные гласные свободно. ck vs k — правило применяет автоматически.'
+      'Фонетика (Phonics Hero): Magic E (a-e, i-e, o-e, u-e) — начинаем.',
+      'Фонетика: Magic E (a-e: cake, name; i-e: kite, bike) — знакомится. o-e, u-e — с опорой.',
+      'Фонетика: Magic E (a-e, i-e) — читает с поддержкой. o-e (bone, home), u-e (cube, tune) — понимает, иногда путается.',
+      'Фонетика: Magic E (a-e, i-e, o-e, u-e: cake, kite, bone, cube) — уверенно. Повторение Magic E — без ошибок.',
+      'Фонетика: все варианты Magic E (a-e, i-e, o-e, u-e) — освоены отлично. '+'{name}'+' читает длинные гласные свободно и применяет правило «молчаливой e» сам(а).'
     ]
   },
   // ── UNIT 4 ──
@@ -678,45 +678,45 @@ var REPORTS = {
       '{name}'+' говорит о еде естественно и с деталями: «I love pizza and pasta, but I don\'t like onions and mushrooms». Знает все продукты и фрукты обоих блоков, проводит опросы, составляет меню — легко и с удовольствием. «Do you like…?» — любимый вопрос на уроке.'
     ],
     reading: [
-      'Фонетика: /ai/ (rain, play) — знакомство. Пока в начале пути.',
-      'Фонетика: /ai/ через ai (rain, tail) и ay (play, tray) — с опорой. Путает с короткой a.',
-      'Фонетика: /ai/ (ai, ay, a-e) — читает с поддержкой. Начинаем /ee/ (tree, leaf).',
-      'Фонетика: /ai/ — уверенно. /ee/ через ee (tree, teeth) и ea (leaf, meat) — осваивает хорошо.',
-      'Фонетика: /ai/ и /ee/ во всех написаниях — отлично. '+'{name}'+' читает: rain, play, cake, tree, leaf, Pete — без подсказок. Понимает, что один звук может писаться по-разному.'
+      'Фонетика (Phonics Hero): /эй/ (ai·ay·a-e) — знакомство. Пока в начале пути.',
+      'Фонетика: /эй/ через ai (rain, tail) и ay (play, tray) — с опорой. Путает с короткой a.',
+      'Фонетика: /эй/ (ai, ay, a-e) — читает с поддержкой. Начинаем /и:/ (tree, sea).',
+      'Фонетика: /эй/ — уверенно. /и:/ через ee (tree, teeth) и ea (sea, meat) — осваивает хорошо.',
+      'Фонетика: /эй/ и /и:/ во всех написаниях (ai·ay·a-e, ee·ea·e-e·y) — отлично. '+'{name}'+' читает: rain, play, cake, tree, meat, happy — без подсказок. Понимает, что один звук может писаться по-разному.'
     ]
   },
   // ── UNIT 5 ──
   u5: {
     main: [
       'Животные фермы и глагол can — тема новая, пока даётся с трудом. Продолжаем.',
-      'Знает основных животных: cow, horse, pig, duck. Can / can\'t понимает, но в речи пока с опорой: «Cows can\'t fly».',
+      'Знает основных животных: cat, cow, horse, duck. Can / can\'t понимает, но в речи пока с опорой: «Cows can\'t fly».',
       '{name}'+' знает животных фермы и говорит об их способностях: «Horses can run, but they can\'t swim». Загадки составляет с подсказкой педагога.',
       '{name}'+' уверенно использует can / can\'t: «Ducks can swim and fly, but they can\'t climb». Загадку составил(а) сам(а) и загадал(а) классу. Все животные — в активном словаре.',
       'Can / can\'t — в свободном владении. '+'{name}'+' говорит о животных, людях и о себе: «I can swim and run, but I can\'t fly — I\'m not a bird!» Загадки составляет творчески, одноклассники не сразу угадывают. Отличный юнит.'
     ],
     reading: [
-      'Фонетика: /ie/ и /oa/ — начинаем знакомство.',
-      'Фонетика: /ie/ (pie, kite, my) — с опорой. /oa/ (coat, grow) — знакомство.',
-      'Фонетика: /ie/ (ie, i-e, y, igh) — читает с поддержкой. /oa/ (oa, ow, o-e) — осваивает.',
-      'Фонетика: /ie/ — уверенно (pie, kite, sky, night). /oa/ — хорошо (coat, grow, bone). Два сложных звука одновременно — сильный результат.',
-      'Фонетика: /ie/ и /oa/ во всех написаниях — отлично. '+'{name}'+' читает: pie, kite, my, night, coat, toad, grow, stone — без ошибок. Понимает логику английского правописания.'
+      'Фонетика (Phonics Hero): /ай/ и /оу/ — начинаем знакомство.',
+      'Фонетика: /ай/ (pie, kite, my) — с опорой. /оу/ (coat, grow) — знакомство.',
+      'Фонетика: /ай/ (ie, igh, y, i-e) — читает с поддержкой. /оу/ (oa, ow, o-e) — осваивает.',
+      'Фонетика: /ай/ — уверенно (pie, night, sky, kite). /оу/ — хорошо (coat, grow, bone). Начинаем /ю:/ (blue, new).',
+      'Фонетика: /ай/, /оу/ и /ю:/ во всех написаниях — отлично. '+'{name}'+' читает: pie, night, sky, coat, grow, stone, blue, new — без ошибок. Понимает логику английского правописания.'
     ]
   },
   // ── UNIT 6 ──
   u6: {
     main: [
       'Парк и предлоги места — новая тема. «Where\'s…?» пока воспринимается с трудом, нужна практика.',
-      'Знает места в парке: slide, swing, pond. Отвечает на «Where\'s…?» с опорой: «She\'s on the swing». Предлоги behind, in front of пока путаются.',
+      'Знает места в парке: slide, swing, seesaw. Отвечает на «Where\'s…?» с опорой: «She\'s on the swing». Предлоги behind, in front of пока путаются.',
       '{name}'+' ориентируется в парке на английском: «Where\'s Tom? — He\'s behind the tree». Природные объекты (flower, butterfly, bee) знает. Предлоги места использует, иногда нужна подсказка.',
-      '{name}'+' уверенно описывает расположение: «She\'s on the swing», «They\'re behind the fountain», «The bee is next to the flower». Диалог «Where\'s…? — He\'s / She\'s…» — без затруднений.',
-      'Предлоги места — в свободном владении. '+'{name}'+' описывает любую сцену: «The cat is under the bench, the bird is on the tree, and the children are in front of the fountain». Пишет стихотворение о природе — с удовольствием.'
+      '{name}'+' уверенно описывает расположение: «She\'s on the swing», «They\'re behind the roundabout», «The bird is next to the flower». Диалог «Where\'s…? — He\'s / She\'s…» — без затруднений.',
+      'Предлоги места — в свободном владении. '+'{name}'+' описывает любую сцену: «The cat is under the slide, the bird is on the tree, and the children are in front of the climbing frame». Пишет стихотворение о природе — с удовольствием.'
     ],
     reading: [
-      'Фонетика: /oo/ (длинный и короткий) и /or/ — знакомство.',
-      'Фонетика: /oo/ длинный (moon, food) — с опорой. /oo/ короткий (book, cook) — путает с длинным.',
-      'Фонетика: /oo/ оба варианта — читает с поддержкой. /or/ (storm, fork) — осваивает.',
-      'Фонетика: /oo/ (moon / book) — уверенно различает. /or/ (storm, fork, sort) — хорошо.',
-      'Фонетика: /oo/ длинный и короткий, /or/ — отлично. '+'{name}'+' различает moon и book на слух и в тексте. Читает предложения с этими звуками без ошибок.'
+      'Фонетика (Phonics Hero): /ау/ (ou·ow), /ой/ (oi·oy) и /ё:/ (er·ir·ur) — знакомство.',
+      'Фонетика: /ау/ (out, cow) — с опорой. /ой/ (coin, boy) — знакомство.',
+      'Фонетика: /ау/ и /ой/ — читает с поддержкой. /ё:/ (bird, turn) — осваивает.',
+      'Фонетика: /ау/, /ой/, /ё:/ — уверенно. Хитрые написания (soft c/g, ph, air·ear·are) — хорошо.',
+      'Фонетика: /ау/, /ой/, /ё:/ и хитрые c·g·ph, air·ear·are — отлично. '+'{name}'+' читает: house, boy, bird, face, phone, chair — без ошибок.'
     ]
   },
   // ── UNIT 7 ──
@@ -729,45 +729,45 @@ var REPORTS = {
       'Город как на ладони! '+'{name}'+' описывает freely: «There\'s a big zoo next to the park, and there are twelve buses at the station». Числа до 20, транспорт, места города — всё в активном словаре. «How many…?» задаёт сам(а).'
     ],
     reading: [
-      'Фонетика: /er/, /ar/ — знакомство.',
-      'Фонетика: /er/ (sister, bird, purple) — с опорой. /ar/ (shark, farm) — знакомство.',
-      'Фонетика: /er/ (er, ir, ur) — читает с поддержкой. /ar/ — осваивает.',
-      'Фонетика: /er/ во всех написаниях — уверенно. /ar/ (shark, farm, star) — хорошо.',
-      'Фонетика: /er/ (er/ir/ur) и /ar/ — отлично. '+'{name}'+' читает: sister, bird, purple, shark, farm — без ошибок. Сложные r-звуки — серьёзное достижение.'
+      'Фонетика (Phonics Hero): большое повторение — диграфы и Magic E. Пока с опорой.',
+      'Фонетика: повторение диграфов (ai·oa·ie, ee·or, ng·oo) — с опорой. Истории читает медленно.',
+      'Фонетика: повторение диграфов и Magic E — читает с поддержкой. Диктант — справляется.',
+      'Фонетика: диграфы и Magic E — уверенно, диктанты пишет хорошо. Повтор /эй/ и /и:/ — без ошибок.',
+      'Фонетика: большое повторение пройдено отлично — диктанты диграфов и Magic E без ошибок. '+'{name}'+' перечитывает истории тетради свободно. Серьёзное достижение.'
     ]
   },
   // ── UNIT 8 ──
   u8: {
     main: [
       'Одежда и Present Continuous — новые темы. «What are you wearing?» пока воспринимается с трудом.',
-      'Одежду знает частично: T-shirt, jeans, hat. Present Continuous понимает, но «She\'s wearing…» самостоятельно строит с трудом.',
-      '{name}'+' знает одежду и отвечает: «I\'m wearing a blue T-shirt and jeans». Описывает других: «She\'s wearing a dress». Активности (climbing, swimming, fishing) — с опорой.',
-      '{name}'+' уверенно использует Present Continuous: «He\'s climbing a tree», «She\'s wearing a red coat and boots». Описывает картинки и реальные ситуации. Одежда — вся в словаре.',
+      'Одежду знает частично: T-shirt, shorts, sun hat. Present Continuous понимает, но «She\'s wearing…» самостоятельно строит с трудом.',
+      '{name}'+' знает одежду и отвечает: «I\'m wearing a blue T-shirt and shorts». Описывает других: «She\'s wearing a skirt». Активности (climbing, swimming, fishing) — с опорой.',
+      '{name}'+' уверенно использует Present Continuous: «He\'s climbing a tree», «She\'s wearing a sweater and trainers». Описывает картинки и реальные ситуации. Одежда — вся в словаре.',
       'Present Continuous — как родной. '+'{name}'+' описывает всё что видит: «He\'s riding a horse, she\'s making a fire, and they\'re putting up a tent!» Написал(а) дневник похода — живо и с деталями. Отличный юнит.'
     ],
     reading: [
-      'Фонетика: /air/, /ou/, /oi/ — начинаем.',
-      'Фонетика: /air/ (chair, bear) — с опорой. /ou/ (found, brown) — знакомство.',
-      'Фонетика: /air/ — читает с поддержкой. /ou/ (ou, ow) и /oi/ (coin, boy) — осваивает.',
-      'Фонетика: /air/ (chair, stairs, bear) — уверенно. /ou/ и /oi/ — хорошо.',
-      'Фонетика: /air/, /ou/ (found/brown), /oi/ (coin/boy) — отлично. '+'{name}'+' читает длинные слова с этими звуками без подсказок. Словарный запас для чтения растёт быстро.'
+      'Фонетика (Phonics Hero): повторение написаний гласных (/оу/, /ю:/, /ау/, /ой/, /ё:/…) — пока с опорой.',
+      'Фонетика: повтор /оу/ (coat, snow) и /ю:/ (blue, new) — с опорой. Остальные написания путаются.',
+      'Фонетика: повторение написаний гласных — читает с поддержкой. Истории Части 1 — справляется.',
+      'Фонетика: все написания гласных (ур.27–31) — уверенно. Хитрые c·g·ph, air·ear·are — хорошо.',
+      'Фонетика: повторение всех написаний гласных — отлично. '+'{name}'+' читает: snow, blue, house, boy, bird, chair — без подсказок и свободно читает истории Части 1.'
     ]
   },
   // ── UNIT 9 ──
   u9: {
     main: [
       'Распорядок дня и Present Simple — завершающий юнит. Тема даётся с трудом, но весь год впереди для закрепления.',
-      'Знает основные действия: wake up, have breakfast, go to school. Рассказывает о дне с опорой: «I wake up and have breakfast». Present Simple — в процессе освоения.',
-      '{name}'+' рассказывает о своём дне: «I wake up at seven. I have breakfast and go to school». Времена суток (in the morning / afternoon / evening) — понимает. На финальном тесте справился(ась) с основными заданиями.',
-      '{name}'+' уверенно описывает день: «I wake up, brush my teeth, have breakfast and go to school. In the evening I do my homework and go to bed». На устном экзамене говорил(а) свободно. Сильное завершение года.',
-      'Блестящее завершение года! '+'{name}'+' рассказывает о своём дне свободно и в деталях: «I wake up at seven, brush my teeth and have breakfast. I go to school in the morning and do homework in the afternoon. In the evening I read and go to bed at nine». Устный экзамен — уверенно, без подсказок. Это настоящий английский.'
+      'Знает основные действия: get up, get dressed, go to school. Рассказывает о дне с опорой: «I get up and go to school». Present Simple — в процессе освоения.',
+      '{name}'+' рассказывает о своём дне: «I get up at seven. I get dressed and go to school». Времена суток (in the morning / afternoon / evening) — понимает. На финальном тесте справился(ась) с основными заданиями.',
+      '{name}'+' уверенно описывает день: «I get up, brush my teeth, make my bed and go to school. In the evening I have a shower and go to bed». На устном экзамене говорил(а) свободно. Сильное завершение года.',
+      'Блестящее завершение года! '+'{name}'+' рассказывает о своём дне свободно и в деталях: «I get up at seven, brush my teeth and comb my hair. I go to school in the morning. In the evening I have a shower and go to bed at nine». Устный экзамен — уверенно, без подсказок. Это настоящий английский.'
     ],
     reading: [
-      'Фонетика: /ue/, soft c/g, ph — знакомство. Читаем первые мини-тексты.',
-      'Фонетика: /ue/ (blue, few) — с опорой. Soft c (face, cycle) и ph (phone) — знакомство. Мини-тексты читает медленно.',
-      'Фонетика: /ue/, soft c, soft g, ph — читает с поддержкой. Мини-тексты «The fish», «The fox» — справляется.',
-      'Фонетика: /ue/, soft c/g, ph — уверенно. Читает мини-тексты самостоятельно. К концу года читает короткие предложения без ошибок.',
-      'Фонетика: весь JP Book 2 пройден и усвоен отлично. '+'{name}'+' читает мини-тексты и предложения самостоятельно, бегло. За год прошли путь от отдельных звуков до связного чтения — это огромный результат.'
+      'Фонетика (Phonics Hero): свободное чтение историй тетради и итоговые диктанты — пока в начале пути.',
+      'Фонетика: истории Частей 2–3 читает медленно, с опорой. Итоговый диктант — с поддержкой.',
+      'Фонетика: истории читает с небольшой поддержкой. Диктанты (звуки, диграфы, Magic E) — справляется.',
+      'Фонетика: свободное чтение историй всех частей — уверенно. Финальное чтение на скорость — хорошо. Диплом Фоникс-героя получен!',
+      'Фонетика: вся тетрадь Phonics Hero пройдена и усвоена отлично — свободное чтение, итоговые диктанты, Диплом Фоникс-героя. За год прошли путь от отдельных звуков до связного чтения — это огромный результат.'
     ]
   }
 };
